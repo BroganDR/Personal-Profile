@@ -14,11 +14,31 @@
       Brogan Reed Software Developer Extraordinaire
       </h1>
       <ul>
-        <li>Contact Me</li>
+        <li><a href="#" onclick="openModal()">Contact Me</a>
+          </li>
         <li>Project Portfolio</li>
       </ul>
     </nav>
 
+    <div id="myModal" class="modal">
+      <span onclick="closeModal()" style="cursor: pointer; float: right;">&times;</span>
+      <h2><a href="https://github.com/BroganDR">Github</a> </h2>
+      <h2><a href="https://www.linkedin.com/in/brogan-reed/">Linkedin</a></h2>
+      
+  </div>
+
+  <script>
+   
+    function openModal() {
+        document.getElementById('myModal').style.display = 'block';
+        document.getElementById('overlay').style.display = 'block';
+    }
+
+    function closeModal() {
+        document.getElementById('myModal').style.display = 'none';
+        document.getElementById('overlay').style.display = 'none';
+    }
+</script>
   <body>
    
 <div class="upper-page">
@@ -27,7 +47,7 @@
       <img id="me" src="me.jpg" alt="It Is I. A Photo of Me" />
       <h3 id="aboutMeHeader">About Me:</h3>
       <p>
-        My name is Brogan Reed and I am a full stack software devoloper. Ive
+        My name is Brogan Reed and I am a full stack software developer. Ive
         always had a passion for coding am looking forward to continuing my
         career java development. I recently finished a course at WCCI and am
         looking for work opportunities.
@@ -52,12 +72,14 @@
   </div>
 
     <article class="project-section">
-      <h3>My Project Portfolio</h3>
+      <h2 id="project-header">My Project Portfolio</h2>
       <div id="portfolio-box-1">
+        
         
           <img src="animal shelter.jpg" alt="Animal Shelter" />
           
-            <h2>Virtual pet:</h2>
+          <a href="https://github.com/2023-Fall-Java-Cohort/virtual-pet-1-BroganDR"><h2>Virtual pet:</h2></a>
+           
         
             
             <ul>
@@ -70,7 +92,8 @@
 
       <div id="portfolio-box-2">
         <img src="garage.jpg" alt="Car Garage" />
-          <h2>Car Garage:</h2>
+        <a href="https://github.com/2023-Fall-Java-Cohort/car-workshop-template-BroganDR"><h2>Car Garage:</h2></a>
+          
           
           <ul>
             <li>Java</li>
@@ -81,7 +104,7 @@
 
       <div id="portfolio-box-3">
         <img src="blackjack.jpg" alt="BlackJack" />
-          <h2>BlackJack:</h2>
+          <a href="https://github.com/2023-Fall-Java-Cohort/blackjack-BroganDR"><h2>BlackJack:</h2></a>
         
         <ul>
           <li>The Thrill of Gambling</li>
