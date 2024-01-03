@@ -3,7 +3,7 @@ body{
     background-color: #9B9ECE;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 10px;
-    color: white;
+    color: black;
 }
 #nav-bar {
     display: flex;
@@ -16,7 +16,7 @@ body{
     padding: 10px;
     border: 20px solid #000500;
     border-radius: 50px;
-    max-width: 75vw;
+    max-width: 100vw;
   
 }
 #title {
@@ -40,6 +40,8 @@ body{
 .upper-page{
     display: flex;
     flex-direction: row;
+    width: 100vw;
+    justify-content: center;
 }
 .About-Me {
     display: flex;
@@ -80,9 +82,24 @@ body{
     font-size: larger;
 }
 
+.project-section{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    max-width: 75vw;
 
+}
+#project-header{
+    grid-column-start: 3;
+    grid-row-start: 2;
+    justify-content: center;
+    
+    
+}
 
 #portfolio-box-1{
+    grid-column-start: 2;
+    grid-row-start: 2;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -98,6 +115,8 @@ body{
 }
 
 #portfolio-box-2{
+    grid-column-start: 4;
+    grid-row-start: 2;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -113,6 +132,8 @@ body{
 }
 
 #portfolio-box-3{
+    grid-column-start: 3;
+    grid-row-start: 3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,3 +147,20 @@ body{
     color: white;
     font-size: larger;
 }
+.modal {
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    align-items: center;
+    background-color: #473BF0;
+    color: white;
+    padding: 10px;
+    border: 20px solid #000500;
+    border-radius: 50px;
+    max-width: 15vw;
+    z-index: 1000;
+    margin: 10px;
+}
+
+
