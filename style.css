@@ -25,13 +25,13 @@ body{
     
     padding: 10px;
 }
-/* Your existing CSS styles */
+
 
 #me {
     max-width: fit-content;
     height: 400px;
    
-    margin-right: 20px; /* Provide some space between the image and text */
+    margin-right: 20px;
     margin-left: 20px;
     border: 10px black solid;
 }
